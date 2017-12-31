@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody
 import priv.louis.live.mapper.UserMapper
 import priv.louis.live.service.CustomUserDetailsService
 
-@Controller("/")
+@Controller
+@RequestMapping("/")
 class IndexController {
 
     @Value("\${live.server.snapshoturl}")
