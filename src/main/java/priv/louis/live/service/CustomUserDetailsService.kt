@@ -25,7 +25,7 @@ class CustomUserDetailsService : UserDetailsService {
             }
 
             override fun getPassword(): String {
-                return user.password
+                return "{MD5}${user.password}"
             }
 
             override fun getUsername(): String {
